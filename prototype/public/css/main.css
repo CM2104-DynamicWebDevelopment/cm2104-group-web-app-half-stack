@@ -17,6 +17,7 @@
     --color-darkGray: #747474;
     --color-gray: #c1c1c1;
     --color-white: #ffffff;
+	--color-navyBlue: #6598BB;
     --color-wrong: #ff4d4d;
     --color-validated: #c1e0c1;
     --default-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
@@ -965,6 +966,46 @@ nav .menuHamburger img {
 
 /* =======================================================================
 
+                                About page
+
+   ======================================================================= */
+#about-holder{
+	margin: 6rem auto 0 auto;	
+	background-color:  var(--color-navyBlue);
+	width:auto;
+	max-width:1000px;
+	height:auto;
+	min-height:500px;
+	display:flex;
+	flex-direction: column;
+	border-radius: 30px;
+}
+
+#about-holder h1, #about-holder h3{
+	color:  var(--color-white);
+}
+
+#about-holder h1{
+	text-align: center;
+}
+
+#about-holder h2{
+	margin: 0.7rem 0 0.5rem 0.5rem;
+	color:  var(--color-darkGray);
+}
+
+#about-holder h3{
+	margin: 0.05rem 0.3rem 1rem 0.8rem;
+}
+
+@media screen and (max-width: 492px) {
+	#about-holder{
+		min-height:630px;
+	}
+}
+
+/* =======================================================================
+
                                 Login page
 
    ======================================================================= */
@@ -982,6 +1023,14 @@ nav .menuHamburger img {
 }
 
 @media screen and (min-width: 768px) {
+    html {
+        -ms-text-size-adjust: 125%;
+        -webkit-text-size-adjust: 125%;
+        font-size: 125%;
+    }
+    /* body {
+    padding: 50px 150px 0;
+	background-image: url(../images/background/background.svg);} */
     #login-page-body {
         padding: 50px 150px 0;
         background-image: url("../images/background/login_background.svg");
@@ -1049,7 +1098,6 @@ nav .menuHamburger img {
     flex-direction: column;
     width: 80%;
     height: 100%;
-    flex-direction: column;
     background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(252, 252, 252, 0.7) 100%), url("../images/background/background.svg");
     background-color: #fcfcfc;
     background-position: bottom left;
@@ -1124,7 +1172,6 @@ nav .menuHamburger img {
     flex-direction: column;
     width: 80%;
     height: 100%;
-    flex-direction: column;
     background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(252, 252, 252, 0.7) 100%), url("../images/background/background.svg");
     background-position: bottom right;
     background-repeat: no-repeat;
